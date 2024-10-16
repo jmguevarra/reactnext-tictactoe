@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, message } from "antd";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function TicTacToe() {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -31,7 +31,6 @@ export default function TicTacToe() {
       {board[index]}
     </button>
   );
-
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-3xl mb-4">Tic-Tac-Toe</h1>
